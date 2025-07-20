@@ -1,0 +1,185 @@
+.goal-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.goal-card h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.goal-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+/* Progress bar */
+.progress-container {
+  margin: 1rem 0;
+  background: #ecf0f1;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+/* Deadline styling */
+.deadline {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.deadline.completed {
+  color: #2ecc71;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.action-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Add to GoalCard.css */
+.deposit-section {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.deposit-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.deposit-section button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deposit-section button:hover {
+  background-color: #2980b9;
+}
+
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.delete-btn {
+  background: #ff3b30;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background: #d70015;
+}
+
+/* Progress Tracking Styles */
+.goal-metrics {
+  margin: 1rem 0;
+}
+
+.amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.remaining {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.completed {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.progress-container {
+  height: 24px;
+  background-color: #ecf0f1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+
+.progress-text {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-left: 8px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .amounts {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
